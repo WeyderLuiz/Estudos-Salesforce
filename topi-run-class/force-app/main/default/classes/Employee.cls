@@ -12,4 +12,9 @@ public virtual class Employee {
         System.debug(JSON.serialize(this));
     }
 
+    virtual
+    public Decimal getBonus () {
+        return this.salary * 1,2;
+    }
+
 }
